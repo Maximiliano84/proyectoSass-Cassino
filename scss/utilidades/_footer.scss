@@ -1,0 +1,61 @@
+            /* footer */
+            
+            .pie-pagina {
+                background: linear-gradient(to top, #ed4264, #ffedbc);
+                width: 100%;
+                .grupo-1 {
+                    display: grid;
+                    width: 100%;
+                    margin: auto;
+                    color: $violeta;
+                    grid-template-columns: repeat(3, 1fr);
+                    padding: 10px;
+                    text-align: center;
+                    max-width: 1200px;
+                    .box figure {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        img {
+                            width: 150px;
+                            h3 {
+                                margin-bottom: 15px;
+                                font-size: 20px;
+                                p {
+                                    margin-bottom: 5px;
+                                    .redes a {
+                                        display: inline-block;
+                                        text-decoration: none;
+                                        width: 50px;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        color: white;
+                                        background-color: $violeta;
+                                        margin-right: 10px;
+                                        border-radius: 50%;
+                                        text-align: center;
+                                        font-size: 2rem;
+                                        transition: all 300ms ease;
+                                        &:hover {
+                                            background-color: #111fdd;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media (max-width: 426px) {
+                .pie-pagina .grupo-1 {
+                    width: 100%;
+                    color: $violeta;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 50px;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }

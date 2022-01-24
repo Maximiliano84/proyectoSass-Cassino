@@ -1,0 +1,23 @@
+/* Nosotros */
+
+.sobre-nosotros {
+    text-align: center;
+    color: white;
+    font-family: $chicle;
+    font-size: 50px;
+}
+
+.nosotros {
+    border: double 5px;
+    margin: 10px;
+    width: 550px;
+    text-align: center;
+    height: 700px;
+}
+
+.div-nube {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+}
