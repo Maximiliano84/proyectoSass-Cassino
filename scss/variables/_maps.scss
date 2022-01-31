@@ -1,0 +1,9 @@
+$textoResaltado: ( p1: rgb(199, 130, 130), p2: rgb(238, 238, 105), p3: rgb(11, 236, 11), p4: rgb(38, 38, 255), p5: rgb(252, 52, 225), p6: rgb(6, 253, 80), p7: rgb(99, 238, 243), p8: rgb(243, 104, 12), );
+@each $frases,
+$color in $textoResaltado {
+    .#{$frases} {
+        color: $color;
+        font-weight: bold;
+        font-size: 23px;
+    }
+}

@@ -5,6 +5,56 @@
   padding: 0;
   box-sizing: border-box; }
 
+.p1 {
+  color: #c78282;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p2 {
+  color: #eeee69;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p3 {
+  color: #0bec0b;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p4 {
+  color: #2626ff;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p5 {
+  color: #fc34e1;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p6 {
+  color: #06fd50;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p7 {
+  color: #63eef3;
+  font-weight: bold;
+  font-size: 23px; }
+
+.p8 {
+  color: #f3680c;
+  font-weight: bold;
+  font-size: 23px; }
+
+.titulo-galeria, .column-img,
+h1, .sobre-nosotros {
+  color: white;
+  font-family: "Chicle", cursive; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   background: linear-gradient(to left, #8897da, #74328f); }
 
@@ -297,57 +347,6 @@ h1 {
   .galeria {
     grid-template-columns: repeat(1, 1fr); } }
 
-/* main */
-.carousel-item {
-  height: auto; }
-
-.carousel {
-  height: 80vh; }
-
-.carousel-inner {
-  height: 80vh; }
-
-/* imagenes */
-h1 {
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-  font-family: "Chicle", cursive; }
-
-.column-img {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin: 25px;
-  text-align: center;
-  color: white;
-  font-family: "Chicle", cursive; }
-  .column-img img {
-    width: 100%;
-    height: 350px; }
-    .column-img img:hover {
-      box-shadow: #f7baf4; }
-  .column-img p {
-    font-family: Georgia, 'Times New Roman', Times, serif; }
-  .column-img a {
-    background-color: white;
-    padding: 5px;
-    text-decoration: none; }
-    .column-img a:hover {
-      background-color: #dcf7fc; }
-
-@media (max-width: 768px) {
-  .column-img {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (max-width: 426px) {
-  .column-img {
-    grid-template-columns: repeat(1, 1fr); }
-  .carousel {
-    height: 12rem; }
-  .carousel-inner {
-    height: 44vh; } }
-
 /* galeria */
 .galeria {
   display: grid;
@@ -356,8 +355,6 @@ h1 {
   padding: 1em; }
 
 .titulo-galeria {
-  color: white;
-  font-family: "Chicle", cursive;
   text-align: center;
   font-size: 40px; }
 
@@ -380,11 +377,58 @@ h1 {
   .galeria {
     grid-template-columns: repeat(2, 1fr); } }
 
+/* main */
+.carousel-item {
+  height: auto; }
+
+.carousel {
+  height: 80vh; }
+
+.carousel-inner {
+  height: 80vh; }
+
+/* imagenes */
+h1 {
+  text-align: center;
+  padding-top: 20px; }
+
+.column-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 25px;
+  text-align: center; }
+  .column-img img {
+    width: 100%;
+    height: 350px; }
+    .column-img img:hover {
+      box-shadow: #f7baf4; }
+  .column-img p {
+    color: white;
+    font-size: 20px; }
+  .column-img a {
+    background-color: white;
+    padding: 5px;
+    text-decoration: none; }
+    .column-img a:hover {
+      background-color: #460646;
+      color: white; }
+
+@media (max-width: 768px) {
+  .column-img {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 426px) {
+  .column-img {
+    grid-template-columns: repeat(1, 1fr); }
+  .carousel {
+    height: 12rem; }
+  .carousel-inner {
+    height: 44vh; } }
+
 /* Nosotros */
 .sobre-nosotros {
   text-align: center;
-  color: white;
-  font-family: "Chicle", cursive;
   font-size: 50px; }
 
 .nosotros {

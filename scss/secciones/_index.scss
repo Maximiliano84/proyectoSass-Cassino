@@ -14,10 +14,8 @@
         /* imagenes */
         
         h1 {
-            color: white;
             text-align: center;
             padding-top: 20px;
-            font-family: $chicle;
         }
         
         .column-img {
@@ -26,8 +24,6 @@
             gap: 20px;
             margin: 25px;
             text-align: center;
-            color: white;
-            font-family: $chicle;
             img {
                 width: 100%;
                 height: 350px;
@@ -36,16 +32,22 @@
                 }
             }
             p {
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                @include fontStyle ($colorTexto, 20px);
             }
             a {
                 background-color: white;
                 padding: 5px;
                 text-decoration: none;
                 &:hover {
-                    background-color: #dcf7fc;
+                    background-color: $violeta;
+                    color: white;
                 }
             }
+        }
+        
+        .column-img,
+        h1 {
+            @extend %estilosParrafos;
         }
         
         @media (max-width: 768px) {

@@ -1,10 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 //variables
 // 2-importaciones/particiones
+@import "./variables/maps";
+@import "./variables/mixin";
+@import "./variables/extend";
 @import "./variables/colores";
 @import "./variables/css-viejo";
 @import "./variables/fuentes";
-@import "./secciones/index";
 @import "./secciones/productos";
+@import "./secciones/index";
 @import "./secciones/promos";
 @import "./secciones/nosotros";
 @import "./secciones/contacto";

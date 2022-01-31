@@ -2,9 +2,8 @@
 
 .sobre-nosotros {
     text-align: center;
-    color: white;
-    font-family: $chicle;
     font-size: 50px;
+    @extend %estilosParrafos;
 }
 
 .nosotros {

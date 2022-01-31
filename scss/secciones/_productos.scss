@@ -1,17 +1,13 @@
 /* galeria */
 
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-    padding: 1em;
+    @include galeria ();
 }
 
 .titulo-galeria {
-    color: white;
-    font-family: $chicle;
     text-align: center;
     font-size: 40px;
+    @extend %estilosParrafos;
 }
 
 .titulo-galeria:hover {
