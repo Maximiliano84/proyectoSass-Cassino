@@ -1,7 +1,17 @@
         /* main */
         
+        .main-index {
+            height: 100%;
+        }
+        
         .carousel-item {
             height: auto;
+            img {
+                width: 90vw;
+                height: 90vh;
+                margin: 0 auto;
+                object-fit: cover;
+            }
         }
         
         .carousel {
@@ -16,6 +26,8 @@
         h1 {
             text-align: center;
             padding-top: 20px;
+            color: $violeta;
+            font-size: 3rem;
         }
         
         .column-img {
@@ -24,9 +36,14 @@
             gap: 20px;
             margin: 25px;
             text-align: center;
+            height: 165vh;
+            h2 {
+                margin-top: 5px
+            }
             img {
                 width: 100%;
                 height: 350px;
+                object-fit: cover;
                 &:hover {
                     box-shadow: rgb(247, 186, 244);
                 }
@@ -36,8 +53,10 @@
             }
             a {
                 background-color: white;
-                padding: 5px;
+                padding: 8px;
                 text-decoration: none;
+                transition: all 400ms ease;
+                color: $violeta;
                 &:hover {
                     background-color: $violeta;
                     color: white;
@@ -54,16 +73,22 @@
             .column-img {
                 grid-template-columns: repeat(2, 1fr);
             }
+            .carousel-item {
+                height: auto;
+                img {
+                    height: 80vh;
+                }
+            }
         }
         
         @media (max-width: 426px) {
             .column-img {
                 grid-template-columns: repeat(1, 1fr);
             }
-            .carousel {
-                height: 12rem;
-            }
-            .carousel-inner {
-                height: 44vh;
+            .carousel-item {
+                height: auto;
+                img {
+                    height: 80vh;
+                }
             }
         }

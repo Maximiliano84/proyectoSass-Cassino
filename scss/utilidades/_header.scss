@@ -1,74 +1,30 @@
-                            /* Header */
-                            
-                            .contenedor {
-                                height: 20vh;
-                                width: 100%;
-                                background: linear-gradient(to top, #ed4264, #ffedbc);
-                            }
-                            /* nav */
-                            
-                            .logo {
-                                width: 220px;
-                                height: 220px;
-                                box-shadow: none;
-                                margin-top: 75px;
-                            }
-                            
-                            .nav-main {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                height: 60px;
-                                padding: 20px;
-                                ul {
-                                    display: flex;
-                                    list-style: none;
-                                    li {
-                                        padding: 10px;
-                                        font-size: 1.2rem;
-                                        a {
-                                            flex: 1;
-                                            margin-top: 90px;
-                                            font-family: $chicle;
-                                            color: $violeta;
-                                            text-decoration: none;
-                                            font-size: 30px;
-                                            &:hover {
-                                                border-bottom: 2px solid white;
-                                                color: white;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            
-                            @media (max-width: 768px) {
-                                /*Tamaño mediano*/
-                                .nav-main ul.nav-menu {
-                                    display: none;
-                                }
-                                .btn-menu {
-                                    font-size: 30px;
-                                    color: white;
-                                    margin-top: 60px;
-                                    cursor: pointer;
-                                    display: none;
-                                }
-                                @media (max-width: 426px) {
-                                    .logo {
-                                        width: 180px;
-                                        height: 180px;
-                                        box-shadow: none;
-                                        margin-top: 60px;
-                                    }
-                                }
-                                .logo {
-                                    width: 180px;
-                                    height: 180px;
-                                    box-shadow: none;
-                                    margin-top: 60px;
-                                }
-                                .btn-menu {
-                                    display: inline-block;
-                                }
-                            }
+    .navbar {
+        height: 20vh;
+        background: linear-gradient(to top, #ed4264, #ffedbc);
+    }
+    
+    .navbar-nav {
+        font-family: $chicle;
+        a {
+            padding: 10px;
+            padding: 10px;
+            font-size: 1.2rem;
+            list-style: none;
+            color: #460646;
+            text-decoration: none;
+            font-size: 30px;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    
+    .navbar-brand img {
+        height: 220px;
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-brand img {
+            height: 110px;
+        }
+    }

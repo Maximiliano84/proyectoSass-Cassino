@@ -1,22 +1,23 @@
 /* Nosotros */
 
+.main-nosotros {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $violeta;
+    font-family: $chicle;
+    background: linear-gradient(to top, #ed4264, #ffedbc);
+    border-radius: 3%;
+}
+
 .sobre-nosotros {
-    text-align: center;
-    font-size: 50px;
-    @extend %estilosParrafos;
+    font-size: 3rem;
+    color: $violeta;
 }
 
-.nosotros {
-    border: double 5px;
-    margin: 10px;
-    width: 550px;
-    text-align: center;
-    height: 700px;
-}
-
-.div-nube {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-content: center;
+.parrafo-nosotros {
+    font-size: 2rem;
 }

@@ -6,11 +6,7 @@
 
 .titulo-galeria {
     text-align: center;
-    font-size: 40px;
-    @extend %estilosParrafos;
-}
-
-.titulo-galeria:hover {
+    font-size: 3rem;
     color: $violeta;
 }
 
@@ -24,14 +20,14 @@
     box-shadow: 1px 2px 56px -1px rgba(243, 242, 243, 0.68);
 }
 
-@media (max-width: 426px) {
-    .galeria {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
     .galeria {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:426px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
